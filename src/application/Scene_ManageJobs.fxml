@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="848.0" style="-fx-background-color: #65526b;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_ManageJobs">
+   <children>
+      <ImageView fitHeight="497.0" fitWidth="497.0" layoutX="176.0" layoutY="-20.0">
+         <image>
+            <Image url="@../../data/images/LOGO.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="60.0" layoutY="32.0" mnemonicParsing="false" onAction="#switchLManagerPage" style="-fx-text-fill: blue;" text="Torna indietro" />
+      <Label layoutX="248.0" layoutY="8.0" style="-fx-text-fill: white;" text="Portale Gestione Lavori">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font></Label>
+      <ImageView fitHeight="554.0" fitWidth="558.0" layoutX="145.0" layoutY="5.0">
+         <image>
+            <Image url="@../../../../Desktop/LOGO.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="60.0" layoutY="107.0" prefWidth="325.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.80001220703124" minWidth="10.0" prefWidth="105.5999755859375" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.79998779296875" minWidth="10.0" prefWidth="96.8000244140625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.79998779296875" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="TF_jIDworker" prefHeight="26.0" prefWidth="126.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="TF_jLavoro" prefHeight="26.0" prefWidth="126.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label contentDisplay="CENTER" prefHeight="62.0" prefWidth="122.0" style="-fx-text-fill: white;" text="ID lavoratore" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label contentDisplay="CENTER" prefHeight="62.0" prefWidth="122.0" style="-fx-text-fill: white;" text="Impiego" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label contentDisplay="CENTER" prefHeight="62.0" prefWidth="122.0" style="-fx-text-fill: white;" text="Inizio periodo" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="106.0" style="-fx-text-fill: white;" text="Criteri di ricerca">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="DP_jStartP" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="displayJobID" prefHeight="78.0" prefWidth="182.0" style="-fx-text-fill: white;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="displayJobName" prefHeight="78.0" prefWidth="182.0" style="-fx-text-fill: white;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="DP_jDisplayStartP" prefHeight="78.0" prefWidth="182.0" style="-fx-text-fill: white;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="60.0" layoutY="257.0" prefHeight="91.0" prefWidth="326.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.20003662109374" minWidth="10.0" prefWidth="104.0000244140625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.79998779296875" minWidth="10.0" prefWidth="97.5999755859375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.79998779296875" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="TF_jAzienda" prefHeight="26.0" prefWidth="126.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="TF_jSede" prefHeight="26.0" prefWidth="126.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label contentDisplay="CENTER" prefHeight="62.0" prefWidth="122.0" style="-fx-text-fill: white;" text="Fine periodo">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label contentDisplay="CENTER" prefHeight="62.0" prefWidth="122.0" style="-fx-text-fill: white;" text="Nome Azienda" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label contentDisplay="CENTER" prefHeight="62.0" prefWidth="122.0" style="-fx-text-fill: white;" text="Luogo di lavoro" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <DatePicker fx:id="DP_jEndP" GridPane.columnIndex="2" />
+            <Label fx:id="displayJobCompany" prefHeight="59.0" prefWidth="134.0" style="-fx-text-fill: white;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="displayJobSite" prefHeight="66.0" prefWidth="98.0" style="-fx-text-fill: white;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="DP_jDisplayEndP" prefHeight="78.0" prefWidth="182.0" style="-fx-text-fill: white;" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="466.0" layoutY="199.0" prefHeight="166.0" prefWidth="337.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.8" minWidth="0.0" prefWidth="143.2000244140625" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.8" minWidth="0.0" prefWidth="12.799975585937489" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.8" minWidth="10.0" prefWidth="182.79993896484376" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="115.20001220703125" minHeight="2.4000244140625" prefHeight="45.399993896484375" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="125.5999755859375" minHeight="10.0" prefHeight="58.40000610351563" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="125.5999755859375" minHeight="10.0" prefHeight="63.19999389648436" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="188.0" style="-fx-text-fill: white;" text="Mansioni" textAlignment="CENTER" GridPane.columnIndex="2">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Label>
+            <TextArea prefHeight="46.0" prefWidth="120.0" text="Retribuzione Lorda&#10;Giornaliera (RLG)" wrapText="true">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </TextArea>
+            <TextArea fx:id="TA_jDisplayTasks" prefHeight="56.0" prefWidth="95.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="TF_jRLG" prefHeight="26.0" prefWidth="126.0" GridPane.rowIndex="1" />
+            <TextArea fx:id="TA_jMansioni" prefHeight="50.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="displayJobRLG" alignment="CENTER" prefHeight="84.0" prefWidth="160.0" style="-fx-text-fill: white;" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="574.0" layoutY="107.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#DisplayJob" prefHeight="26.0" prefWidth="74.0" text="Visualizza" />
+            <Button mnemonicParsing="false" onAction="#UpdateJob" text="Aggiorna" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onAction="#insertNewJob" prefHeight="26.0" prefWidth="74.0" text="Inserisci" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#DeleteJob" prefHeight="26.0" prefWidth="66.0" style="-fx-text-fill: red;" text="Elimina" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Button layoutX="73.0" layoutY="395.0" mnemonicParsing="false" onAction="#displayWorkPerID" prefHeight="26.0" prefWidth="200.0" text="Visualizza Lavori di singolo utente" />
+      <TextField fx:id="TF_jIDworker1" layoutX="306.0" layoutY="395.0" prefHeight="26.0" prefWidth="56.0" />
+      <TextArea fx:id="TAresultArea" layoutX="73.0" layoutY="450.0" prefHeight="200.0" prefWidth="702.0" />
+      <Button layoutX="574.0" layoutY="395.0" mnemonicParsing="false" onAction="#checkEveryWorker" prefHeight="26.0" prefWidth="200.0" text="Effettua controllo lavoratori" />
+   </children>
+</AnchorPane>

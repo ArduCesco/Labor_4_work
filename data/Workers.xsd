@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Workers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Anagrafica">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NomeWorker" type="xs:string" />
+              <xs:element name="CognomeWorker" type="xs:string" />
+              <xs:element name="LuogoNascitaWorker" type="xs:string" />
+              <xs:element name="DataNascitaWorker" type="xs:date" />
+              <xs:element name="Nazionalita" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Indirizzo" type="xs:string" />
+        <xs:element name="NumRecapTel" type="xs:int" />
+        <xs:element name="email" type="xs:string" />
+        <xs:element name="EsperienzePassate" type="xs:" />
+        <xs:element name="LingueParlate" type="xs:string" />
+        <xs:element name="Patente" type="xs:" />
+        <xs:element name="Automunito" type="xs:boolean" />
+        <xs:element name="Disponibilita">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PeriodoInizioDisponibilita" type="xs:date" />
+              <xs:element name="PeriodoFineDisponibilita" type="xs:date" />
+              <xs:element name="LuogoDisponibilita" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ContattoUrgenza">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NomeUrgenza" type="xs:string" />
+              <xs:element name="CognomeUrgenza" type="xs:string" />
+              <xs:element name="TelefonoUrgenza" type="xs:int" />
+              <xs:element name="EmailUrgenza" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

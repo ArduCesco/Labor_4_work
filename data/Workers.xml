@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DOCTYPE Invoice PUBLIC "In"-->  
+<Workers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="Workers.xsd">
+	<Anagrafica>
+		<NomeWorker> </NomeWorker>
+		<CognomeWorker> </CognomeWorker>
+		<LuogoNascitaWorker> </LuogoNascitaWorker>
+		<DataNascitaWorker> </DataNascitaWorker>
+		<Nazionalita> </Nazionalita>
+	</Anagrafica>
+	<Indirizzo> </Indirizzo>
+	<NumRecapTel> </NumRecapTel>
+	<email> </email>
+	<EsperienzePassate> </EsperienzePassate>
+	<LingueParlate> </LingueParlate>
+	<Patente> </Patente>
+	<Automunito> </Automunito>
+	<Disponibilita>
+		<PeriodoDisponibilita> </PeriodoDisponibilita>
+		<LuogoDisponibilita> </LuogoDisponibilita>
+	</Disponibilita>
+	<ContattoUrgenza>
+		<NomeUrgenza> </NomeUrgenza>
+		<CognomeUrgenza> </CognomeUrgenza>
+		<TelefonoUrgenza> </TelefonoUrgenza>
+		<EmailUrgenza> </EmailUrgenza>
+	</ContattoUrgenza>
+</Workers>
+
+<xml-enums>
+</xml-enums>
